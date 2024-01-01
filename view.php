@@ -39,7 +39,7 @@
                                                                     </div>
                                                                     <div class="col-md-4 col-3 text-end">
                                                                         <label class="card-label">Price:</label>
-                                                                        <h4 class="card-name"> ₹<?= $room['price']; ?></h4>
+                                                                        <h4 class="card-name"> RM<?= $room['price']; ?></h4>
                                                                     </div>
                                                                     <div class="col-md-12">
                                                                         <hr class="my-2">

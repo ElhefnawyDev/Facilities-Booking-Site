@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h4 class="main-heading text-white">Funda Hotel Booking</h4>
+                <h4 class="main-heading text-white"> Facilities Booking Site</h4>
                 <div class="underline bg-white mx-auto"></div>
                 <p class="text-white">
-                    Get the Best Price on booking your hotel rooms at Funda Hotel Booking.
+                    Get the Best Price on booking your hotel rooms at  Facilities Booking Site.
                 </p>
             </div>
         </div>
@@ -44,7 +44,7 @@
                                                 </div>
                                                 <div class="card-box-body">
                                                     <h4 class="card-heading"><?= $room['room_name']; ?>
-                                                        <button class="btn btn-sm btn-primary float-end text-white">₹<?= $room['price']; ?></button>
+                                                        <button class="btn btn-sm btn-primary float-end text-white">RM<?= $room['price']; ?></button>
                                                     </h4>
                                                 </div>
                                             </div>
@@ -74,7 +74,7 @@
                 <h4 class="main-heading">Our Testimonials</h4>
                 <div class="underline mx-auto"></div>
                 <p>
-                    What people tell about our Funda Hotel Booking
+                    What people tell about our  Facilities Booking Site
                 </p>
             </div>
 
@@ -86,7 +86,7 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        I have been using their service a couple of time. They are one of the best hotel booking service provider in bangalore.
+                                        I have been using their service a couple of time. They are one of the best Facilities Booking Site service provider in bangalore.
                                     </p>
                                     <h5 class="testi-title">Raju</h5>
                                 </div>
@@ -98,7 +98,7 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        I have been using their service a couple of time. They are one of the best hotel booking service provider in bangalore.
+                                        I have been using their service a couple of time. They are one of the best Facilities Booking Site service provider in bangalore.
                                     </p>
                                     <h5 class="testi-title">Sahal SM</h5>
                                 </div>
@@ -110,8 +110,8 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        One of the best hotel booking service provider in bangalore
-                                        One of the best hotel booking service provider in bangalore
+                                        One of the best Facilities Booking Site service provider in bangalore
+                                        One of the best Facilities Booking Site service provider in bangalore
                                     </p>
                                     <h5 class="testi-title">Muniraj</h5>
                                 </div>

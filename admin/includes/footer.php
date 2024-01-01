@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <p class="text-white mb-0">All rights reserved @ 2021. Funda Bookings</p>
+                        <p class="text-white mb-0">All rights reserved @ 2021.  Bookings</p>
                     </div>
                 </div>
             </div>

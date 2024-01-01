@@ -3,7 +3,7 @@
       <div class="row">
 
         <div class="col-md-6">
-          <h4 class="text-white">Funda Hotel Booking</h4>
+          <h4 class="text-white"> Facilities Booking Site</h4>
           <div class="underline"></div>
           <p class="text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -30,7 +30,7 @@
         <div class="col-md-12">
           <hr class="bg-white">
           <p class="text-white f-12">
-            &copy; Copyright at Funda Hotel Booking. All Rights Reserved.
+            &copy; Copyright at  Facilities Booking Site. All Rights Reserved.
           </p>
         </div>
       </div>
