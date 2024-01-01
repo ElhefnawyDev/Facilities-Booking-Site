@@ -39,7 +39,7 @@
                                                                     </div>
                                                                     <div class="col-md-4 col-3 text-end">
                                                                         <label class="card-label">Price:</label>
-                                                                        <h4 class="card-name"> ₹<?= $room['price']; ?></h4>
+                                                                        <h4 class="card-name"> RM<?= $room['price']; ?></h4>
                                                                     </div>
                                                                     <div class="col-md-12">
                                                                         <hr class="my-2">
@@ -52,7 +52,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-md-4">
-                                                                        <label class="card-label">Check In:</label>
+                                                                        <label class="card-label">date:</label>
                                                                         <input type="date" id="checkin" value="<?= isset($_GET['checkin']) ? $_GET['checkin'] : ''; ?>" required class="checkinclass form-control" name="checkin">
                                                                     </div>
                                                                     <div class="col-md-4">
