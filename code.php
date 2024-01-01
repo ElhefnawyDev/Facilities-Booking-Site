@@ -6,9 +6,11 @@ include('config/dbcon.php');
 if(isset($_POST['login_btn']))
 {
     $email = mysqli_real_escape_string($con, $_POST['email']);
+    $matric = mysqli_real_escape_string($con, $_POST['lname']);
+
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    $query = "SELECT * FROM users where email='$email' AND password='$password' LIMIT 1";
+    $query = "SELECT * FROM users where lname='$matric' AND password='$password' LIMIT 1";
     $query_run = mysqli_query($con, $query); 
     foreach($query_run as $row)
     {
@@ -122,11 +124,11 @@ if(isset($_POST['confirm_book_btn']))
     $roomqty_query_run = mysqli_query($con, $roomqty_query);
     $omrow = mysqli_fetch_array($roomqty_query_run);
     $roomqty = $omrow['room_qty'];
-
+    
     if(mysqli_num_rows($chk_aval_run) < $roomqty)
     {
-        $conf_book_query = "INSERT INTO bookings (room_id, user_id, checkin, checkout, price, payment_mode)
-        VALUES ('$roomid','$userid','$checkin','$checkout','$roomprice','$paymentmode')";
+        $conf_book_query = "INSERT INTO bookings (room_id, user_id, checkin, checkout, price, payment_mode, Status)
+        VALUES ('$roomid','$userid','$checkin','$checkout','$roomprice','$paymentmode', 'Pending')";
 
         $conf_book_query_run = mysqli_query($con, $conf_book_query);
 

@@ -38,7 +38,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group mb-4">
-                                                            <label class="">Last Name</label>
+                                                            <label class="">Matric Number</label>
                                                             <input type="text" class="form-control" value="<?= $data['lname']; ?>" required name="lname">
                                                         </div>
                                                     </div>

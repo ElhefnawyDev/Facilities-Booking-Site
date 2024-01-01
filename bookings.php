@@ -25,8 +25,10 @@
                             
                             if(mysqli_num_rows($all_bookings_query_run) > 0)
                             {
-                                $new_bookings_query = " SELECT  b.checkin,b.checkout,b.price, b.created_at, r.id, r.room_name  FROM bookings b, rooms r WHERE b.user_id='$uid' AND b.room_id= r.id AND b.checkin >= '$today' ";
+                                $new_bookings_query = " SELECT  b.checkin,b.checkout,b.price, b.created_at,b.Status, r.id, r.room_name  FROM bookings b, rooms r WHERE b.user_id='$uid' AND b.room_id= r.id AND b.checkin >= '$today' ";
                                 $new_bookings_query_run = mysqli_query($con, $new_bookings_query);
+                                $new_bookings_query_run = mysqli_query($con, $new_bookings_query);
+
                                 if(mysqli_num_rows($new_bookings_query_run) > 0)
                                 {
                                     ?>  
@@ -44,6 +46,7 @@
                                                                 <th>Check Out</th>
                                                                 <th>Price</th>
                                                                 <th>Booked on</th>
+                                                                <th>Status</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -53,10 +56,12 @@
                                                             ?>  
                                                                 <tr>
                                                                     <td><?= $newroom['room_name']; ?></td>
-                                                                    <td> <?= date("d-m-Y", strtotime($newroom['checkin'])); ?></td>
-                                                                    <td> <?= date("d-m-Y", strtotime($newroom['checkout'])); ?></td>
+                                                                    <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkin'])); ?></td>
+                                                                    <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkout'])); ?></td>
                                                                     <td><?= $newroom['price']; ?></td>
                                                                     <td> <?= date("d-m-Y h:i A", strtotime($newroom['created_at'])); ?></td>
+                                                                    <td><?= $newroom['Status']; ?></td>
+
                                                                 </tr>
                                                             <?php
                                                         }

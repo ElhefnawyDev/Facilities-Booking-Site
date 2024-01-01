@@ -161,6 +161,44 @@ if(isset($_POST['delete_room']))
     }
 }
 
+// delete bookings 
+if(isset($_POST['delete_booking']))
+{
+    echo "Booking ID to delete: " . $_POST['delete_booking'];
+    $booking_id = $_POST['delete_booking'];
+    $delquery = "DELETE FROM bookings WHERE id='$booking_id' ";
+    $delquery_run = mysqli_query($con, $delquery);
+
+    if($delquery_run)
+    {
+        redirect("bookings.php","Booking canceled Successfully");
+    }
+}
+// Update Booking Status Deny
+if(isset($_POST['Deny_bookingst_btn']))
+{
+    $booking_id = $_POST['Deny_bookingst_btn'];
+    $update_query = "UPDATE bookings SET Status='Denied' WHERE id='$booking_id' ";
+    $delquery_run = mysqli_query($con, $update_query);
+
+    if($delquery_run)
+    {
+        redirect("bookings.php","Booking Denied Successfully");
+    } 
+}
+// Update Booking Status Approve
+if(isset($_POST['Approve_bookingst_btn']))
+{
+    $booking_id = $_POST['Approve_bookingst_btn'];
+    $update_query = "UPDATE bookings SET Status='Approved' WHERE id='$booking_id' ";
+    $delquery_run = mysqli_query($con, $update_query);
+
+    if($delquery_run)
+    {
+        redirect("bookings.php","Booking Approved Successfully");
+    } 
+}
+
 // Admin login
 if(isset($_POST['admin_login_btn']))
 {

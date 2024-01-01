@@ -14,7 +14,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>First Name</th>
-                                    <th>Last Name</th>
+                                    <th>Matric Number</th>
                                     <th>Phone</th>
                                     <th>Gender</th>
                                     <th>Email</th>

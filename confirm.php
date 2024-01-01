@@ -42,7 +42,7 @@ include('includes/header.php'); ?>
                                 $date1=date_create($chkin);
                                 $date2=date_create($chkout);
                                 $difference=date_diff($date1,$date2);
-                                $sub_diff = $difference->format("%a");
+                                $sub_diff = $difference->format("%%h");
                                 $diff = $sub_diff + 1;
                                 $totalprice = $roomprice * $diff;
 
@@ -78,7 +78,7 @@ include('includes/header.php'); ?>
                                                                 <h5 class="form-control"><?= $roomprice ?></h5>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <label for="">No of Days</label>
+                                                                <label for="">No of Hours</label>
                                                                 <h5 class="form-control"><?= $diff ?></h5>
                                                             </div>
                                                             <div class="col-md-4">
@@ -167,8 +167,8 @@ include('includes/header.php'); ?>
                                                     <h6 class="form-control bg-white"> No of beds: <?= $total_beds ?></h6>
                                                    
                                                     <h6 class="form-control bg-white"> Price: <?= $roomprice." x ". $diff ."days = ".$roomprice * $diff ?></h6>
-                                                    <h6 class="form-control bg-white"> Check In: <?= date('d-m-Y', strtotime($checkin)) ?></h6>
-                                                    <h6 class="form-control bg-white"> Check Out: <?= date('d-m-Y', strtotime($checkout)) ?></h6>
+                                                    <h6 class="form-control bg-white"> Check In: <?= date('d-m-Y h:i A', strtotime($checkin)) ?></h6>
+                                                    <h6 class="form-control bg-white"> Check Out: <?= date('d-m-Y h:i A', strtotime($checkout)) ?></h6>
                                                     <div class="text-end">
                                                         <button type="button" data-bs-toggle="modal" data-bs-target="#CheckoutModal" class="btn btn-primary">Book Now</button>
                                                     </div>

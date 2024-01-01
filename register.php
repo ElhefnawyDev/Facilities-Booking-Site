@@ -19,14 +19,14 @@ if(isset($_SESSION['login']))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
-                                        <label class="">First Name</label>
-                                        <input type="text" class="form-control alphaonly" required name="fname">
+                                        <label class="">Full Name</label>
+                                        <input type="text" class="form-control" required name="fname">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
-                                        <label class="">Last Name</label>
-                                        <input type="text" class="form-control alphaonly"  required name="lname">
+                                        <label class="">Matric Number</label>
+                                        <input type="text"  onblur="MatricNo()" id= "Matric" class="form-control"  required name="lname">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

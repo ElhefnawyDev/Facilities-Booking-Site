@@ -19,9 +19,9 @@ if(isset($_SESSION['login']))
                         <div class="card-body">
                             <form action="code.php" method="POST">
                                 <div class="form-group mb-3">
-                                    <label class="">Email address</label>
-                                    <input type="email" required class="form-control" name="email">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <label class="">Matric Number</label>
+                                    <input type="text" required class="form-control" name="lname">
+                                    <small id="emailHelp" class="form-text text-muted">We'll nevers share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="">Password</label>

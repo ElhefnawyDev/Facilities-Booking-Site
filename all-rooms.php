@@ -15,12 +15,12 @@
                         <form action="" method="GET">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <label class="card-label">Check In:</label>
-                                    <input type="date" id="checkin" required value="<?= isset($_GET['checkin']) ? $_GET['checkin'] : ''; ?>" class="checkinclass form-control" name="checkin">
+                                    <label class="card-label">Check Ins:</label>
+                                    <input type="datetime-local" id="checkin" required value="<?= isset($_GET['checkin']) ? $_GET['checkin'] : ''; ?>" class="checkinclass form-control" name="checkin">
                                 </div>
                                 <div class="col-md-4">
                                     <label class="card-label">Check out:</label>
-                                    <input type="date" id="checkout"  value="<?= isset($_GET['checkout']) ? $_GET['checkout'] : ''; ?>"required class="checkoutclass form-control" name="checkout">
+                                    <input type="datetime-local" id="checkout"  value="<?= isset($_GET['checkout']) ? $_GET['checkout'] : ''; ?>"required class="checkoutclass form-control" name="checkout">
                                 </div>
                                 <div class="col-md-4">
                                     <label class="card-label">Check Availability by date</label>

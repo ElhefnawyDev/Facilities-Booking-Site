@@ -31,13 +31,35 @@ function cvvvalidate()
   
   function PhoneNumvalidate()
   {
-      var filter = /^[0-9][0-9]{9}$/; //PATTERN FOR MOBILE NUMBER
-      
+      //var filter = /^[0-6][0-9]{9}$/; //PATTERN FOR MOBILE NUMBER
       var a = $("#mobilenumber").val();     
-      if (!(filter.test(a))) {
+      if (!(a.length ==11)) {
             alert("Enter valid mobile number");
             $("#mobilenumber").val('');
       }
+  }
+
+  function isNumber(char) {
+  return /^\d$/.test(char);
+}
+
+
+
+  function MatricNo()
+  {
+      //var filter = /^[0-6][0-9]{9}$/; //PATTERN FOR MOBILE NUMBER
+      var a = $("#Matric").val(); 
+      if (!(a.length ==8)) {
+            alert("Enter valid matric number");
+            $("#Matric").val('');
+          
+      } else if((a.length ==8)) {
+        if(isNumber(a[0]) || isNumber(a[1]||)){
+        alert("Enter valid matric number");
+            $("#Matric").val('');
+      }
+    }
+
   }
 
   $('.alphaonly').bind('keyup blur',function(){ 

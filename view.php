@@ -53,11 +53,11 @@
                                                                 <div class="row">
                                                                     <div class="col-md-4">
                                                                         <label class="card-label">Check In:</label>
-                                                                        <input type="date" id="checkin" value="<?= isset($_GET['checkin']) ? $_GET['checkin'] : ''; ?>" required class="checkinclass form-control" name="checkin">
+                                                                        <input type="datetime-local" id="checkin" value="<?= isset($_GET['checkin']) ? $_GET['checkin'] : ''; ?>" required class="checkinclass form-control" name="checkin">
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <label class="card-label">Check out:</label>
-                                                                        <input type="date" id="checkout" value="<?= isset($_GET['checkout']) ? $_GET['checkout'] : ''; ?>" required class="checkoutclass form-control" name="checkout">
+                                                                        <label class="card-label">Check Out:</label>
+                                                                        <input type="datetime-local" id="checkout" value="<?= isset($_GET['checkout']) ? $_GET['checkout'] : ''; ?>" required class="checkoutclass form-control" name="checkout">
                                                                     </div>
                                                                     <div class="col-md-4">
                                                                         <label class="card-label">Check Availability</label>
