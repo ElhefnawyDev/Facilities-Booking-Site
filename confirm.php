@@ -42,7 +42,7 @@ include('includes/header.php'); ?>
                                 $date1=date_create($chkin);
                                 $date2=date_create($chkout);
                                 $difference=date_diff($date1,$date2);
-                                $sub_diff = $difference->format("%%h");
+                                $sub_diff = $difference->format("%h");
                                 $diff = $sub_diff + 1;
                                 $totalprice = $roomprice * $diff;
 
