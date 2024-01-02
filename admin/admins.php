@@ -110,7 +110,7 @@
                                     ?>
                                     <tr>
                                         <td> <?= $row['id']; ?> </td>
-                                        <td class="adname"><?=$row['name'];?></td>
+                                        <td class="admin_name"><?=$row['name'];?></td>
                                         <td class="ademail"><?=$row['email'];?></td>
                                         <td class="adphone"><?=$row['phone'];?></td>
                                         <td>
