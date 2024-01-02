@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="pl-3 pt-3">
-                        <h4 class="heading">Edit Room Details</h4>
+                        <h4 class="heading">Edit hall Details</h4>
                         <hr>
                     </div>
                     <div class="card-body">
@@ -25,25 +25,25 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Room Name</label>
+                                                <label class="form-label">hall Name</label>
                                                 <input type="text" class="form-control" value="<?= $data['room_name']; ?>" name="room_name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Total Rooms</label>
+                                                <label class="form-label">Total halls</label>
                                                 <input type="number" class="form-control" value="<?= $data['room_qty']; ?>" name="noofrooms">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">No of Beds</label>
+                                                <label class="form-label">No of hall</label>
                                                 <input type="number" class="form-control" value="<?= $data['no_of_beds']; ?>" name="noofbeds">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Rate </label> <small class="help-text">Per Day/Night</small>
+                                                <label class="form-label">Rate </label> <small class="help-text"></small>
                                                 <input type="number" class="form-control" value="<?= $data['price']; ?>" name="price">
                                             </div>
                                             
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3">
-                                                <label class="form-label">Add Room Image</label>
+                                                <label class="form-label">Add hall Imagealls</label>
                                                 <input type="file" class="form-control" name="room_image">
                                                 <input type="hidden" name="room_image_old" value="<?= $data['room_image']; ?>">
                                             </div>

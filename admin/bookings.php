@@ -28,7 +28,7 @@
                                                             <tr>
                                                                 <th>ID</th>
                                                                 <th>User Name</th>
-                                                                <th>Room Name</th>
+                                                                <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
                                                                 <th>No of Days</th>
@@ -120,5 +120,4 @@
     </div>
 </section>
 
-<?php include('includes/footer.php'); ?>
-
+<?php include('includes/footer.php');?>

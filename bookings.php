@@ -41,7 +41,7 @@
                                                     <table class="myTable table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
-                                                                <th>Room Name</th>
+                                                                <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
                                                                 <th>Price</th>
@@ -89,7 +89,7 @@
                                                     <table class="myTable table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
-                                                                <th>Room Name</th>
+                                                                <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
                                                                 <th>Price</th>

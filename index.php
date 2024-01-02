@@ -9,7 +9,7 @@
                 <h4 class="main-heading text-white"> Facilities Booking Site</h4>
                 <div class="underline bg-white mx-auto"></div>
                 <p class="text-white">
-                    Get the Best Price on booking your hotel rooms at  Facilities Booking Site.
+                    A small gift from Group 13 Web dev to UTHMS
                 </p>
             </div>
         </div>
@@ -44,7 +44,7 @@
                                                 </div>
                                                 <div class="card-box-body">
                                                     <h4 class="card-heading"><?= $room['room_name']; ?>
-                                                        <button class="btn btn-sm btn-primary float-end text-white">RM<?= $room['price']; ?></button>
+                                                        <button class="btn btn-sm btn-primary float-end text-white">Book Now<?= $room['price']; ?></button>
                                                     </h4>
                                                 </div>
                                             </div>
@@ -86,9 +86,9 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        I have been using their service a couple of time. They are one of the best Facilities Booking Site service provider in bangalore.
+                                        This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Raju</h5>
+                                    <h5 class="testi-title">Mohammed Taresh</h5>
                                 </div>
                             </div>
                         </div>
@@ -98,9 +98,9 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        I have been using their service a couple of time. They are one of the best Facilities Booking Site service provider in bangalore.
+                                        This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Sahal SM</h5>
+                                    <h5 class="testi-title">Ali Mohamed</h5>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +110,9 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        One of the best Facilities Booking Site service provider in bangalore
-                                        One of the best Facilities Booking Site service provider in bangalore
+                                        This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Muniraj</h5>
+                                    <h5 class="testi-title">Sya</h5>
                                 </div>
                             </div>
                         </div>

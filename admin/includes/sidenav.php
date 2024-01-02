@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item ">
               <a href="add.php" class="nav-link <?= $page == "add.php"?'active':''; ?>"><i class="nav-icon fa fa-plus"></i>
-                  <p>Add Rooms</p>
+                  <p>Add halls</p>
               </a>
             </li>
             <li class="nav-item ">

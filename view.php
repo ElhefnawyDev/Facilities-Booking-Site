@@ -34,7 +34,7 @@
 
                                                                 <div class="row">
                                                                     <div class="col-md-8 col-9">
-                                                                        <label class="card-label">Room Name:</label>
+                                                                        <label class="card-label">hall Name:</label>
                                                                         <h4 class="card-name"><?= $room['room_name']; ?></h4> 
                                                                     </div>
                                                                     <div class="col-md-4 col-3 text-end">

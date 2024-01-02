@@ -14,25 +14,25 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Room Name</label>
+                                        <label class="form-label">hall Name</label>
                                         <input type="text" required class="form-control" name="room_name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Total Rooms</label>
+                                        <label class="form-label">Total halls</label>
                                         <input type="number" required class="form-control" name="noofrooms">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">No of Beds</label>
+                                        <label class="form-label">No of hall</label>
                                         <input type="number" required class="form-control" name="noofbeds">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Rate </label> <small class="help-text">Per Day/Night</small>
+                                        <label class="form-label">Rate </label> <small class="help-text"></small>
                                         <input type="number" required class="form-control" name="price">
                                     </div>
                                     
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Add Room Image</label>
+                                        <label class="form-label">Add hall Imagealls</label>
                                         <input type="file" required class="form-control" name="room_image">
                                     </div>
                                 </div>

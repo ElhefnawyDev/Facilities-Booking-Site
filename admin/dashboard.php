@@ -6,7 +6,7 @@
             <div class="col-md-3">
                 <a href="rooms.php">
                     <div class="card shadow">
-                        <div class="card-header text-center bg-primary"><h5 class="mb-0">Total Rooms</h5></div>
+                        <div class="card-header text-center bg-primary"><h5 class="mb-0">Total halls</h5></div>
                         <div class="card-body text-center">
                             <?php 
                                 $total_rooms = "SELECT * FROM rooms";

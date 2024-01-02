@@ -29,7 +29,7 @@
                                                             <tr>
                                                                 <th>ID</th>
                                                                 <th>User Name</th>
-                                                                <th>Room Name</th>
+                                                                <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
                                                                 <th>Price</th>

@@ -164,7 +164,7 @@ include('includes/header.php'); ?>
 
                                                     <h2 class="main-heading">Room is available</h2>
                                                     <h6 class="form-control bg-white"> Room:  <?= $roomname ?> </h6>
-                                                    <h6 class="form-control bg-white"> No of beds: <?= $total_beds ?></h6>
+                                                    <h6 class="form-control bg-white"> No of hall: <?= $total_beds ?></h6>
                                                    
                                                     <h6 class="form-control bg-white"> Price: <?= $roomprice." x ". $diff ."days = ".$roomprice * $diff ?></h6>
                                                     <h6 class="form-control bg-white"> Check In: <?= date('d-m-Y h:i A', strtotime($checkin)) ?></h6>
