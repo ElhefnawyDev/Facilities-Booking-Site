@@ -41,8 +41,9 @@ if(isset($_POST['add_room_btn']))
     if($filename = $_FILES['room_image']['name'] != '')
     {
         $roomname = $_POST['room_name'];
+        $doorno = $_POST['door_no'];
         $roomqty = $_POST['noofrooms'];
-        $noofbeds = $_POST['noofbeds'];
+        $capacity = $_POST['capacity'];
         if(isset($_POST['visibility']))
         {
             $status = "1"; 
@@ -71,7 +72,7 @@ if(isset($_POST['add_room_btn']))
             }
             else
             {
-                echo $add_query = "INSERT INTO rooms (room_name,no_of_beds,room_qty,description,price, room_image,status) VALUES ('$roomname','$noofbeds','$roomqty','$desc','$price','$filename','$status') ";
+                echo $add_query = "INSERT INTO rooms (room_name,door_no,capacity,room_qty,description, room_image,status) VALUES ('$roomname','$doorno','$capacity','$roomqty','$desc','$filename','$status') ";
                 $add_query_run = mysqli_query($con, $add_query);
             
                 if($add_query_run)
@@ -99,8 +100,9 @@ if(isset($_POST['update_room_btn']))
 {
     $room_id = $_POST['room_id'];
     $roomname = $_POST['room_name'];
+    $doorno = $_POST['door_no'];
     $roomqty = $_POST['noofrooms'];
-    $noofbeds = $_POST['noofbeds'];
+    $capacity = $_POST['capacity'];
     if(isset($_POST['visibility']))
     {
         $status = "1"; 
@@ -108,7 +110,6 @@ if(isset($_POST['update_room_btn']))
     else{
         $status = "0";
     }
-    $price = $_POST['price'];
     $desc = $_POST['description'];
 
     $new_image = $_FILES['room_image']['name'];
@@ -131,7 +132,7 @@ if(isset($_POST['update_room_btn']))
             redirect("rooms.php","Image already Exists ".$filename);
         }
     }
-    $query = "UPDATE rooms SET room_name='$roomname', no_of_beds='$noofbeds', room_qty='$roomqty', description='$desc', price='$price', room_image='$update_filename', status='$status' WHERE id='$room_id' ";
+    $query = "UPDATE rooms SET room_name='$roomname', door_no='$doorno', capacity='$capacity', room_qty='$roomqty', description='$desc', room_image='$update_filename', status='$status' WHERE id='$room_id' ";
     $query_run = mysqli_query($con, $query);
     if($query_run)
     {

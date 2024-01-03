@@ -34,12 +34,12 @@
 
                                                                 <div class="row">
                                                                     <div class="col-md-8 col-9">
-                                                                        <label class="card-label">Room Name:</label>
+                                                                        <label class="card-label">Hall Name:</label>
                                                                         <h4 class="card-name"><?= $room['room_name']; ?></h4> 
                                                                     </div>
                                                                     <div class="col-md-4 col-3 text-end">
-                                                                        <label class="card-label">Price:</label>
-                                                                        <h4 class="card-name"> RM<?= $room['price']; ?></h4>
+                                                                        <label class="card-label">Door Name:</label>
+                                                                        <h4 class="card-name"> <?= $room['door_no']; ?></h4>
                                                                     </div>
                                                                     <div class="col-md-12">
                                                                         <hr class="my-2">

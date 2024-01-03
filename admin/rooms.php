@@ -14,9 +14,9 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Room Name</th>
+                                    <th>Door No</th>
                                     <th>Total Rooms</th>
-                                    <th>No of Beds</th>
-                                    <th>Price</th>
+                                    <th>Capacity</th>
                                     <th>Image</th>
                                     <th>Status</th>
                                     <th>EDIT</th>
@@ -35,9 +35,9 @@
                                     <tr>
                                         <td> <?= $row['id']; ?> </td>
                                         <td> <?= $row['room_name']; ?> </td>
+                                        <td> <?= $row['door_no']; ?> </td>
                                         <td> <?= $row['room_qty']; ?> </td>
-                                        <td> <?= $row['no_of_beds']; ?> </td>
-                                        <td> <?= $row['price']; ?> </td>
+                                        <td> <?= $row['capacity']; ?> </td>
                                         <td> 
                                             <img src="../uploads/<?= $row['room_image']; ?>" width="50px" alt="Image here">
                                         </td>

@@ -12,7 +12,7 @@
                             
                             if(mysqli_num_rows($all_bookings_query_run) > 0)
                             {
-                                $new_bookings_query = "SELECT b.id as omid, b.checkin,b.checkout,b.price, b.created_at, b.Status, r.id, r.room_name, u.id, u.fname, u.lname FROM bookings b, rooms r, users u WHERE b.room_id= r.id AND u.id=b.user_id AND b.checkout >= '$today' ";
+                                $new_bookings_query = "SELECT b.id as omid, b.checkin,b.checkout, b.created_at, b.Status, r.id, r.room_name, u.id, u.fname, u.lname FROM bookings b, rooms r, users u WHERE b.room_id= r.id AND u.id=b.user_id AND b.checkout >= '$today' ";
                                 $new_bookings_query_run = mysqli_query($con, $new_bookings_query);
                                 if(mysqli_num_rows($new_bookings_query_run) > 0)
                                 {
@@ -31,8 +31,7 @@
                                                                 <th>Room Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
-                                                                <th>No of Days</th>
-                                                                <th>Price</th>
+                                                                <th>No of Hours</th>
                                                                 <th>Booked On</th>
                                                                 <th>Status</th>
                                                             </tr>
@@ -42,12 +41,11 @@
                                                     foreach($new_bookings_query_run as $newroom)
                                                     {
                                                         $chkin = date('Y-m-d h:i A',strtotime($newroom['checkin']));
-                                                        $chkout = date('Y-m-d h:i A',strtotime($newroom['checkout']));
-                                                        $date1=date_create($chkin);
-                                                        $date2=date_create($chkout);
-                                                        $difference=date_diff($date1,$date2);
-                                                        $sub_diff = $difference->format("%h");
-                                                        $diff = $sub_diff + 1;
+                                                            $chkout = date('Y-m-d h:i A',strtotime($newroom['checkout']));
+                                                            $checkin = new DateTime($newroom['checkin']);
+                                                            $checkout = new DateTime($newroom['checkout']);
+                                                            $interval = $checkin->diff($checkout);
+                                                            $totalHours = $interval->h + ($interval->days * 24); // Total hours including days
                                                         ?>  
 
                                                         <tr>
@@ -56,8 +54,7 @@
                                                             <td><?= $newroom['room_name']; ?></td>
                                                             <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkin'])); ?></td>
                                                             <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkout'])); ?></td>
-                                                            <td><?= $diff; ?></td>
-                                                            <td><?= $newroom['price']; ?></td>
+                                                            <td><?= $totalHours; ?></td>
                                                             <td><?= $newroom['created_at']; ?></td>
                                                             <td><?= $newroom['Status']; ?></td>
                                                             <td>

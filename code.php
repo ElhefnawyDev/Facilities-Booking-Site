@@ -101,7 +101,6 @@ if(isset($_POST['confirm_book_btn']))
     $checkin = $_POST['checkin'];
     $checkout = $_POST['checkout'];
     $userid = $_SESSION['auth']['auth_id'];
-    $roomprice = $_POST['totalprice'];
     if(isset($_SESSION['login']))
     {
         $userid = $_SESSION['auth']['auth_id'];
@@ -127,8 +126,8 @@ if(isset($_POST['confirm_book_btn']))
     
     if(mysqli_num_rows($chk_aval_run) < $roomqty)
     {
-        $conf_book_query = "INSERT INTO bookings (room_id, user_id, checkin, checkout, price, payment_mode, Status)
-        VALUES ('$roomid','$userid','$checkin','$checkout','$roomprice','$paymentmode', 'Pending')";
+        $conf_book_query = "INSERT INTO bookings (room_id, user_id, checkin, checkout, Status)
+        VALUES ('$roomid', '$userid','$checkin','$checkout', 'Pending')";
 
         $conf_book_query_run = mysqli_query($con, $conf_book_query);
 
