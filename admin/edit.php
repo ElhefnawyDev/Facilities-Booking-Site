@@ -31,21 +31,22 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Total halls</label>
+                                                <label class="form-label">Door No</label>
+                                                <input type="text" class="form-control" value="<?= $data['door_no']; ?>" name="door_no">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Total Rooms</label>
                                                 <input type="number" class="form-control" value="<?= $data['room_qty']; ?>" name="noofrooms">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">No of hall</label>
-                                                <input type="number" class="form-control" value="<?= $data['no_of_beds']; ?>" name="noofbeds">
+                                                <label class="form-label">Capacity</label><small class="help-text">Seats No.</small>
+                                                <input type="number" class="form-control" value="<?= $data['capacity']; ?>" name="capacity">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Rate </label> <small class="help-text"></small>
-                                                <input type="number" class="form-control" value="<?= $data['price']; ?>" name="price">
-                                            </div>
                                             
                                         </div>
                                         <div class="col-md-12">

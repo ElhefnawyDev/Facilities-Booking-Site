@@ -32,20 +32,17 @@ include('includes/header.php'); ?>
                                 $roomqty_query_run = mysqli_query($con, $roomqty_query);
                                 $omrow = mysqli_fetch_array($roomqty_query_run);
                                 $roomqty = $omrow['room_qty'];
-                                $roomprice = $omrow['price'];
                                 $roomname = $omrow['room_name'];
+                                $doorno = $omrow['door_no'];
                                 $room_image = $omrow['room_image'];
-                                $total_beds = $omrow['no_of_beds'];
+                                $capacity = $omrow['capacity'];
 
                                 $chkin = date('Y-m-d',strtotime($checkin));
                                 $chkout = date('Y-m-d',strtotime($checkout));
-                                $date1=date_create($chkin);
-                                $date2=date_create($chkout);
-                                $difference=date_diff($date1,$date2);
-                                $sub_diff = $difference->format("%h");
-                                $diff = $sub_diff + 1;
-                                $totalprice = $roomprice * $diff;
-
+                                $checkins = new DateTime($checkin);
+                                $checkouts = new DateTime($checkout);
+                                $interval = $checkins->diff($checkouts);
+                                $totalHours = $interval->h + ($interval->days * 24); 
 
                                 if(mysqli_num_rows($chk_aval_run) < $roomqty)
                                 {
@@ -74,26 +71,27 @@ include('includes/header.php'); ?>
                                                         
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label for="">Room Price</label>
-                                                                <h5 class="form-control"><?= $roomprice ?></h5>
+                                                                <label for="">Room Name</label>
+                                                                <h5 class="form-control"><?= $roomname ?></h5>
+                                                            </div>
+                                                        
+                                                            <div class="col-md-4">
+                                                                <label for="">Door No</label>
+                                                                <h5 class="form-control"><?= $doorno?></h5>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label for="">No of Hours</label>
-                                                                <h5 class="form-control"><?= $diff ?></h5>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <label for="">Total Price</label>
-                                                                <h5 class="form-control"><?= $totalprice ?></h5>
+                                                                <h5 class="form-control"><?= $totalHours?></h5>
                                                             </div>
                                                             <div class="col-md-12 mt-3">
-                                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                                                                     <li class="nav-item" role="presentation">
                                                                         <button class="nav-link active" id="cashon-tab" data-bs-toggle="tab" data-bs-target="#cashon" type="button" role="tab" aria-controls="cashon" aria-selected="true">Cash Payment</button>
                                                                     </li>
                                                                     <li class="nav-item" role="presentation">
                                                                         <button class="nav-link" id="payonline-tab" data-bs-toggle="tab" data-bs-target="#payonline" type="button" role="tab" aria-controls="payonline" aria-selected="false">Pay Online</button>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> -->
                                                                 <div class="tab-content" id="myTabContent">
                                                                     <div class="tab-pane border fade show active" id="cashon" role="tabpanel" aria-labelledby="cashon-tab">
                                                                         <div class="p-3">
@@ -108,7 +106,7 @@ include('includes/header.php'); ?>
                                                                             </form>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="tab-pane border fade" id="payonline" role="tabpanel" aria-labelledby="payonline-tab">
+                                                                    <!-- <div class="tab-pane border fade" id="payonline" role="tabpanel" aria-labelledby="payonline-tab">
                                                                         <div class="p-3">
                                                                             <form action="code.php" method="POST">
                                                                                 <input type="hidden" name="bookroomid" value="<?= $roomid ?>">
@@ -145,7 +143,7 @@ include('includes/header.php'); ?>
                                                                                 </div>
                                                                             </form>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -162,11 +160,11 @@ include('includes/header.php'); ?>
                                             <div class="col-md-6">
                                        
 
-                                                    <h2 class="main-heading">Room is available</h2>
-                                                    <h6 class="form-control bg-white"> Room:  <?= $roomname ?> </h6>
-                                                    <h6 class="form-control bg-white"> No of hall: <?= $total_beds ?></h6>
-                                                   
-                                                    <h6 class="form-control bg-white"> Price: <?= $roomprice." x ". $diff ."days = ".$roomprice * $diff ?></h6>
+                                                    <h2 class="main-heading">Hall is available</h2>
+                                                    <h6 class="form-control bg-white"> Room Name:  <?= $roomname ?> </h6>
+                                                    <h6 class="form-control bg-white"> Door No:  <?= $doorno ?> </h6>
+                                                    <h6 class="form-control bg-white"> Capacity: <?= $capacity ?></h6>
+                                                    <h6 class="form-control bg-white"> No of Hours: <?= $totalHours?></h6>
                                                     <h6 class="form-control bg-white"> Check In: <?= date('d-m-Y h:i A', strtotime($checkin)) ?></h6>
                                                     <h6 class="form-control bg-white"> Check Out: <?= date('d-m-Y h:i A', strtotime($checkout)) ?></h6>
                                                     <div class="text-end">

@@ -20,21 +20,22 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Total halls</label>
+                                        <label class="form-label">Door No</label>
+                                        <input type="text" required class="form-control" name="door_no">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Total Rooms</label>
                                         <input type="number" required class="form-control" name="noofrooms">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">No of hall</label>
-                                        <input type="number" required class="form-control" name="noofbeds">
+                                        <label class="form-label">Capacity</label><small class="help-text">Seats No</small>
+                                        <input type="number" required class="form-control" name="capacity">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Rate </label> <small class="help-text"></small>
-                                        <input type="number" required class="form-control" name="price">
-                                    </div>
                                     
                                 </div>
                                 <div class="col-md-12">

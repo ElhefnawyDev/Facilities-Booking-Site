@@ -90,7 +90,7 @@
                                             </div>
                                             <div class="card-box-body">
                                                 <h4 class="card-heading"><?= $room['room_name']; ?>
-                                                    <button class="btn btn-sm btn-primary float-end text-white">Book Now<?= $room['price']; ?></button>
+                                                    <button class="btn btn-sm btn-primary float-end text-white">Book Now</button>
                                                 </h4>
                                             </div>
                                         </div>

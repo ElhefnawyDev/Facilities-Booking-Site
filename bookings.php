@@ -25,7 +25,7 @@
                             
                             if(mysqli_num_rows($all_bookings_query_run) > 0)
                             {
-                                $new_bookings_query = " SELECT  b.checkin,b.checkout,b.price, b.created_at,b.Status, r.id, r.room_name  FROM bookings b, rooms r WHERE b.user_id='$uid' AND b.room_id= r.id AND b.checkin >= '$today' ";
+                                $new_bookings_query = " SELECT  b.checkin,b.checkout, b.created_at,b.Status, r.id, r.room_name  FROM bookings b, rooms r WHERE b.user_id='$uid' AND b.room_id= r.id AND b.checkin >= '$today' ";
                                 $new_bookings_query_run = mysqli_query($con, $new_bookings_query);
                                 $new_bookings_query_run = mysqli_query($con, $new_bookings_query);
 
@@ -44,7 +44,7 @@
                                                                 <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
-                                                                <th>Price</th>
+                                                                <th>No of Hours</th>
                                                                 <th>Booked on</th>
                                                                 <th>Status</th>
                                                             </tr>
@@ -53,12 +53,19 @@
                                                         <?php
                                                         foreach($new_bookings_query_run as $newroom)
                                                         {
+                                                            $chkin = date('Y-m-d h:i A',strtotime($newroom['checkin']));
+                                                            $chkout = date('Y-m-d h:i A',strtotime($newroom['checkout']));
+                                                            $checkin = new DateTime($newroom['checkin']);
+                                                            $checkout = new DateTime($newroom['checkout']);
+                                                            $interval = $checkin->diff($checkout);
+                                                            $totalHours = $interval->h + ($interval->days * 24); // Total hours including days
+
                                                             ?>  
                                                                 <tr>
                                                                     <td><?= $newroom['room_name']; ?></td>
                                                                     <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkin'])); ?></td>
                                                                     <td> <?= date("d-m-Y h:i A", strtotime($newroom['checkout'])); ?></td>
-                                                                    <td><?= $newroom['price']; ?></td>
+                                                                    <td><?= $totalHours .'Hrs';  ?></td>
                                                                     <td> <?= date("d-m-Y h:i A", strtotime($newroom['created_at'])); ?></td>
                                                                     <td><?= $newroom['Status']; ?></td>
 
@@ -92,21 +99,28 @@
                                                                 <th>hall Name</th>
                                                                 <th>Check In</th>
                                                                 <th>Check Out</th>
-                                                                <th>Price</th>
+                                                                <th>No of Hours</th>
                                                                 <th>Booked on</th>
+                                                                <th>Status</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                         <?php
                                                         foreach($older_bookings_query_run as $room)
                                                         {
+                                                            
+                                                            $checkin = new DateTime($room['checkin']);
+                                                            $checkout = new DateTime($room['checkout']);
+                                                            $interval = $checkin->diff($checkout);
+                                                            $totalHours = $interval->h + ($interval->days * 24); // Total hours including days
                                                             ?>  
                                                                 <tr>
                                                                     <td><?= $room['room_name']; ?></td>
-                                                                    <td> <?= date("d-m-Y", strtotime($room['checkin'])); ?></td>
-                                                                    <td> <?= date("d-m-Y", strtotime($room['checkout'])); ?></td>
-                                                                    <td><?= $room['price']; ?></td>
+                                                                    <td> <?= date("d-m-Y h:i A", strtotime($room['checkin'])); ?></td>
+                                                                    <td> <?= date("d-m-Y h:i A", strtotime($room['checkout'])); ?></td>
+                                                                    <td><?= $totalHours .'Hrs';  ?></td>
                                                                     <td> <?= date("d-m-Y h:i A", strtotime($room['created_at'])); ?></td>
+                                                                    <td><?= $room['Status']; ?></td>
                                                                 </tr>
                                                             <?php
                                                         }
