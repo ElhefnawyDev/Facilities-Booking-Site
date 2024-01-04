@@ -100,7 +100,7 @@
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
                                         This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Ali Mohamed</h5>
+                                    <h5 class="testi-title">Ali Elhefnawy</h5>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
                                         This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Mohammed Taresh</h5>
+                                    <h5 class="testi-title">Yuki</h5>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
                                         This site helped me very much in booking university halls and saved me a lot of time
                                     </p>
-                                    <h5 class="testi-title">Mohammed Taresh</h5>
+                                    <h5 class="testi-title">Zara</h5>
                                 </div>
                             </div>
                         </div>
