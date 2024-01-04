@@ -71,10 +71,10 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 mb-3 text-center">
-                <h4 class="main-heading">Our Testimonials</h4>
+                <h4 class="main-heading">Our Students Feedback</h4>
                 <div class="underline mx-auto"></div>
                 <p>
-                    What people tell about our  Facilities Booking Site
+                    What students thought about our Facilities Booking Site
                 </p>
             </div>
 
@@ -98,7 +98,7 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        This site helped me very much in booking university halls and saved me a lot of time
+                                        The site is straight forward and easy to use! I like it!
                                     </p>
                                     <h5 class="testi-title">Ali Elhefnawy</h5>
                                 </div>
@@ -110,36 +110,49 @@
                                 <div class="testi-content">
                                     <p>
                                         <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        This site helped me very much in booking university halls and saved me a lot of time
+                                        layout and accessibility of the booking interface have simplified the process, ensuring that students can quickly book their preferred classes 
+                                    </p>
+                                    <h5 class="testi-title">Zara</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div class="testi-card">
+                                <div class="testi-content">
+                                    <p>
+                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
+                                        The website efficiency in allowing us to reserve our desired classes
+                                    </p>
+                                    <h5 class="testi-title">Yuki</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div class="testi-card">
+                                <div class="testi-content">
+                                    <p>
+                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
+                                        The website the has been instrumental in streamlining our academic journeys.
+                                    </p>
+                                    <h5 class="testi-title">Mei Chun</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item text-center">
+                            <div class="testi-card">
+                                <div class="testi-content">
+                                    <p>
+                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
+                                        Amazing experience and smooth interface
                                     </p>
                                     <h5 class="testi-title">Sya</h5>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item text-center">
-                            <div class="testi-card">
-                                <div class="testi-content">
-                                    <p>
-                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        This site helped me very much in booking university halls and saved me a lot of time
-                                    </p>
-                                    <h5 class="testi-title">Yuki</h5>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="item text-center">
-                            <div class="testi-card">
-                                <div class="testi-content">
-                                    <p>
-                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
-                                        This site helped me very much in booking university halls and saved me a lot of time
-                                    </p>
-                                    <h5 class="testi-title">Zara</h5>
-                                </div>
-                            </div>
-                        </div>
+
                         
                     </div>
             </div>
