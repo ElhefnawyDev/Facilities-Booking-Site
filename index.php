@@ -116,6 +116,30 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="item text-center">
+                            <div class="testi-card">
+                                <div class="testi-content">
+                                    <p>
+                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
+                                        This site helped me very much in booking university halls and saved me a lot of time
+                                    </p>
+                                    <h5 class="testi-title">Mohammed Taresh</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item text-center">
+                            <div class="testi-card">
+                                <div class="testi-content">
+                                    <p>
+                                        <i class="left-q-icon text-white fa fa-quote-left "> </i>
+                                        This site helped me very much in booking university halls and saved me a lot of time
+                                    </p>
+                                    <h5 class="testi-title">Mohammed Taresh</h5>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
             </div>
