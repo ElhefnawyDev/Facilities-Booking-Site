@@ -10,7 +10,7 @@ if(isset($_POST['login_btn']))
 
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    $query = "SELECT * FROM users where lname='$matric' AND password='$password' LIMIT 1";
+    $query = "SELECT * FROM users where lname='$matric' AND password='$password' AND status='0' LIMIT 1";
     $query_run = mysqli_query($con, $query); 
     foreach($query_run as $row)
     {
