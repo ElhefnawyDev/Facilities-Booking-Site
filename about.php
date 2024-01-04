@@ -37,21 +37,19 @@
                 <h4 class="main-heading">Our Services</h4>
                 <div class="underline"></div>
                 <p>
-                "Empower Your Digital Presence with Our Services
+                "Empower Your Digital Presence with Our Services At Facilities Booking Site, we redefine excellence in [industry/service]. Our commitment to innovation and client satisfaction sets us apart. With a team of dedicated experts, we deliver tailored solutions that propel your business forward.</p>
 
-                At Facilities Booking Site, we redefine excellence in [industry/service]. Our commitment to innovation and client satisfaction sets us apart. With a team of dedicated experts, we deliver tailored solutions that propel your business forward.
+                <p>Why choose Facilities Booking Site? </p>
 
-                Why choose Facilities Booking Site?
+                <p>1. Strategic Expertise: Our seasoned professionals bring a wealth of strategic insight to every project, ensuring a holistic approach to your business needs.</p>
 
-                1. *Strategic Expertise:* Our seasoned professionals bring a wealth of strategic insight to every project, ensuring a holistic approach to your business needs.
+                <p>2. Cutting-edge Technology: Stay ahead in the digital landscape with our utilization of the latest technologies. We embrace innovation to provide you with solutions that stand the test of time.</p>
 
-                2. *Cutting-edge Technology:* Stay ahead in the digital landscape with our utilization of the latest technologies. We embrace innovation to provide you with solutions that stand the test of time.
+                <p>3. Client-Centric Approach: Your success is our priority. We collaborate closely with clients, understanding their goals and delivering results that exceed expectations.</p>
 
-                3. *Client-Centric Approach:* Your success is our priority. We collaborate closely with clients, understanding their goals and delivering results that exceed expectations.
+                <p>4. Custom Solutions: No two businesses are alike. We tailor our services to fit your unique requirements, offering personalized solutions that align with your vision.</p>
 
-                4. *Custom Solutions:* No two businesses are alike. We tailor our services to fit your unique requirements, offering personalized solutions that align with your vision.
-
-                Explore the world of possibilities with [Your Company Name]. Elevate your digital presence and unlock new opportunities. Let's embark on a journey of success together."</p>
+                <p>Explore the world of possibilities with [Your Company Name]. Elevate your digital presence and unlock new opportunities. Let's embark on a journey of success together."</p>
 
             </div>
         </div>    

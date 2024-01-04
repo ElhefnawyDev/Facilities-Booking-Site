@@ -115,8 +115,3 @@ if (isset($_POST['reg_btn'])) {
 </section>
 </body>
 </html>
-
-
-
-
-
