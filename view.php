@@ -138,3 +138,4 @@ $('#checkin').blur(function (e) {
     $('.checkoutclass').val(maxDate);
 });
 
+</script>
